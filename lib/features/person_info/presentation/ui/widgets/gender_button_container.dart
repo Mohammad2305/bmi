@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../cores/shared/constants/colors.dart';
 import '../../../../../cores/shared/themes/text_styles.dart';
 import '../../../data/cores/models/values/gender_list.dart';
@@ -16,7 +17,7 @@ class GenderButtonContainer extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           color: isMale? AppColors.buttonNavColor: AppColors.appBarColor,
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(12.r),
         ),
         child: Column(
           children: [

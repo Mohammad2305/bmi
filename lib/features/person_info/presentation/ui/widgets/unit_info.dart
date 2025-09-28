@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../cores/shared/constants/colors.dart';
 import '../../../../../cores/shared/themes/text_styles.dart';
 
@@ -14,7 +15,7 @@ class UnitInfo extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: AppColors.appBarColor,
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(12.r),
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -23,7 +24,7 @@ class UnitInfo extends StatelessWidget {
           Text(info, style: AppTextStyles.heightInfo),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            spacing: 45,
+            spacing: 45.w,
             children: [
               FloatingActionButton.small(
                 heroTag: "minus$title",

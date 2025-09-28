@@ -1,5 +1,6 @@
 import 'package:bmi_app/cores/shared/themes/box_decoration.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../cores/shared/constants/colors.dart';
 import '../../../../../cores/shared/themes/text_styles.dart';
 import '../../../data/cores/models/classes/user.dart';
@@ -14,17 +15,17 @@ class HeightPickerPart extends StatefulWidget {
 }
 
 class _HeightPickerPartState extends State<HeightPickerPart> {
-  double height = 163;
+  double height = 163.h;
 
   @override
   Widget build(BuildContext context) {
     widget.user.height = height;
 
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 25),
+      padding: EdgeInsets.symmetric(vertical: 25.h),
       decoration: AppBoxDecoration.generalContainer,
       child: Column(
-        spacing: 5,
+        spacing: 5.h,
         children: [
           Text("Height", style: AppTextStyles.heightPickerTitle),
           Text.rich(

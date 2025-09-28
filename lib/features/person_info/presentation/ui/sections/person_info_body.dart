@@ -3,6 +3,7 @@ import 'package:bmi_app/features/person_info/presentation/ui/parts/gender_part.d
 import 'package:bmi_app/features/person_info/presentation/ui/parts/height_picker_part.dart';
 import 'package:bmi_app/features/person_info/presentation/ui/parts/unit_info_part.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class PersonInfoBody extends StatelessWidget {
   final User user;
@@ -14,7 +15,7 @@ class PersonInfoBody extends StatelessWidget {
       padding: const EdgeInsets.all(15),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        spacing: 25,
+        spacing: 25.h,
         children: [
           GenderPart(user: user,),
           HeightPickerPart(user: user,),

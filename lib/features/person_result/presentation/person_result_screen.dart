@@ -1,10 +1,7 @@
-import 'package:bmi_app/cores/shared/themes/box_decoration.dart';
-import 'package:bmi_app/cores/shared/themes/text_styles.dart';
 import 'package:bmi_app/cores/shared/ui/sections/custom_app_bar.dart';
 import 'package:bmi_app/features/person_info/data/cores/models/functions/bmi_calc.dart';
 import 'package:bmi_app/features/person_info/presentation/person_info_screen.dart';
 import 'package:bmi_app/features/person_result/data/cores/models/functions/bmi_text.dart';
-import 'package:bmi_app/features/person_result/data/cores/models/values/result_map.dart';
 import 'package:bmi_app/features/person_result/presentation/ui/sections/person_result_body.dart';
 import 'package:flutter/material.dart';
 import '../../../cores/shared/constants/colors.dart';

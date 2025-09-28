@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../data/cores/models/classes/user.dart';
 import '../../../data/cores/models/values/gender_list.dart';
 import '../../../data/cores/models/values/unit_info_title_list.dart';
@@ -26,8 +27,8 @@ class _UnitInfoPartState extends State<UnitInfoPart> {
       physics: NeverScrollableScrollPhysics(),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        mainAxisSpacing: 10,
-        crossAxisSpacing: 10,
+        mainAxisSpacing: 10.h,
+        crossAxisSpacing: 10.w,
       ),
       itemCount: genders.length,
       itemBuilder: (context, index) {
