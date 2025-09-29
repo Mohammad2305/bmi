@@ -12,7 +12,7 @@ class PersonInfoBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(15),
+      padding: EdgeInsets.all(15.sp),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         spacing: 25.h,

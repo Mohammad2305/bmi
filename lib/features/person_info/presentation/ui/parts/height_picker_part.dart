@@ -15,7 +15,7 @@ class HeightPickerPart extends StatefulWidget {
 }
 
 class _HeightPickerPartState extends State<HeightPickerPart> {
-  double height = 163.h;
+  double height = 163;
 
   @override
   Widget build(BuildContext context) {

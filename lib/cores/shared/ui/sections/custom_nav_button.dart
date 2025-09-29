@@ -1,6 +1,7 @@
 import 'package:bmi_app/cores/shared/constants/colors.dart';
 import 'package:bmi_app/cores/shared/themes/text_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomNavButton extends StatelessWidget {
   final String title;
@@ -12,7 +13,7 @@ class CustomNavButton extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Container(
-        height: 100,
+        height: 80.h,
         color: AppColors.buttonNavColor,
         child: Center(child: Text(title, style: AppTextStyles.titleButtonNav,)),
       ),

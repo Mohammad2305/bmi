@@ -15,11 +15,13 @@ class GenderButtonContainer extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Container(
+        padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
         decoration: BoxDecoration(
           color: isMale? AppColors.buttonNavColor: AppColors.appBarColor,
           borderRadius: BorderRadius.circular(12.r),
         ),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Center(child: genders[index].genderIcon),
             Text(

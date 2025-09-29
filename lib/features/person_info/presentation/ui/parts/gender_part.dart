@@ -26,6 +26,7 @@ class _GenderPartState extends State<GenderPart> {
         crossAxisCount: 2,
         mainAxisSpacing: 10.h,
         crossAxisSpacing: 10.w,
+        mainAxisExtent: 200.w
       ),
       itemCount: genders.length,
       itemBuilder: (context, index) {

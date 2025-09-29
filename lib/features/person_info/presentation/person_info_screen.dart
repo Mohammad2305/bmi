@@ -16,7 +16,7 @@ class PersonInfoScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.screenColor,
       appBar: CustomAppBar(),
-      body: PersonInfoBody(user: user,),
+      body: SingleChildScrollView(child: PersonInfoBody(user: user,)),
       bottomNavigationBar: CustomNavButton(
         title: 'Calculate', 
         onTap: () {
