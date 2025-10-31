@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppTextStyles{
   static TextStyle? titleAppBar = TextStyle(
-    fontSize: 40.sp,
+    fontSize: 30.sp,
     fontWeight: FontWeight.w600,
     color: Colors.white,
   );

@@ -33,7 +33,7 @@ class PersonResultBody extends StatelessWidget {
                 ],
               ),
             ),
-          )
+          ),
         ],
       ),
     );

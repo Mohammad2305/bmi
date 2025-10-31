@@ -1,8 +1,8 @@
 import 'package:bmi_app/bmi_app.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-void main() {
-  runApp(
-    const BmiApp()
-  );
+void main() async{
+  await ScreenUtil.ensureScreenSize();
+  runApp(const BmiApp());
 }

@@ -1,5 +1,7 @@
+import 'package:bmi_app/features/person_info/presentation/cubits/person_info_cubit.dart';
 import 'package:bmi_app/features/person_info/presentation/person_info_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class BmiApp extends StatelessWidget {
@@ -13,7 +15,10 @@ class BmiApp extends StatelessWidget {
       splitScreenMode: true,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: PersonInfoScreen(),
+        home: BlocProvider(
+          create: (context)=>PersonInfoCubit(),
+          child: PersonInfoScreen(),
+        ),
       ),
     );
   }
